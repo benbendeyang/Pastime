@@ -1,25 +1,19 @@
 //
-//  UserMainController.swift
+//  LoginController.swift
 //  Pastime
 //
 //  Created by 🐑 on 2018/11/20.
 //  Copyright © 2018 Zhu. All rights reserved.
 //
-//  我的页
 
 import UIKit
 
-class UserMainController: BaseViewController {
+class LoginController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-    
-    // MARK: - 操作
-    @IBAction func clickLogin(_ sender: UIButton) {
-        LoginManager.login(presentingViewController: navigationController)
     }
     
 

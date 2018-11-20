@@ -17,7 +17,20 @@
                     <view key="view" contentMode="scaleToFill" id="hfb-Pq-3Nr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lj-Mm-bX4">
+                                <rect key="frame" x="172" y="318.5" width="31" height="30"/>
+                                <state key="normal" title="登陆"/>
+                                <connections>
+                                    <action selector="clickLogin:" destination="y4v-cW-2LN" eventType="touchUpInside" id="oL5-cj-vuy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0lj-Mm-bX4" firstAttribute="centerY" secondItem="hfb-Pq-3Nr" secondAttribute="centerY" id="GQA-Ph-bWa"/>
+                            <constraint firstItem="0lj-Mm-bX4" firstAttribute="centerX" secondItem="hfb-Pq-3Nr" secondAttribute="centerX" id="gct-oW-2Oz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uBd-sW-QY2"/>
                     </view>
                     <navigationItem key="navigationItem" id="1dq-ab-MWA"/>
