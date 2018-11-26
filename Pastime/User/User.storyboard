@@ -22,7 +22,7 @@
                                 <rect key="frame" x="172" y="318.5" width="31" height="30"/>
                                 <state key="normal" title="登陆"/>
                                 <connections>
-                                    <action selector="clickLogin:" destination="y4v-cW-2LN" eventType="touchUpInside" id="oL5-cj-vuy"/>
+                                    <action selector="clickLogin:" destination="y4v-cW-2LN" eventType="touchUpInside" id="Rsr-Am-xvW"/>
                                 </connections>
                             </button>
                         </subviews>

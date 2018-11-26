@@ -26,5 +26,16 @@ class LoginController: BaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    // MARK: - 操作
+    @IBAction func clickCancel(_ sender: Any) {
+        navigationController?.dismiss(animated: true)
+    }
+    
+    @IBAction func clickLogin(_ sender: Any) {
+        print("点击登陆")
+    }
+    
+    @IBAction func clickRegister(_ sender: Any) {
+        print("点击注册")
+    }
 }

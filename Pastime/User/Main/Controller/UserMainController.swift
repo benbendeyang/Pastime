@@ -18,7 +18,7 @@ class UserMainController: BaseViewController {
     }
     
     // MARK: - 操作
-    @IBAction func clickLogin(_ sender: UIButton) {
+    @IBAction func clickLogin(_ sender: Any) {
         LoginManager.login(presentingViewController: navigationController)
     }
     

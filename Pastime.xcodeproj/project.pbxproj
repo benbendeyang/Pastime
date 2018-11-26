@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1725596C7863AF470B19D3FC /* Pods_PastimeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3B6190349B548FC15A3BCF /* Pods_PastimeTests.framework */; };
+		32CCAE9B21ABAE5D0061A367 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CCAE9A21ABAE5D0061A367 /* KeychainManager.swift */; };
 		32D90EF421A3DACA00094CBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D90EF321A3DACA00094CBA /* AppDelegate.swift */; };
 		32D90EFB21A3DACC00094CBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D90EFA21A3DACC00094CBA /* Assets.xcassets */; };
 		32D90EFE21A3DACC00094CBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D90EFC21A3DACC00094CBA /* LaunchScreen.storyboard */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		255ECDA25CD37AE2F8544111 /* Pods_Pastime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pastime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32CCAE9A21ABAE5D0061A367 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		32D90EF021A3DACA00094CBA /* Pastime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pastime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D90EF321A3DACA00094CBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32D90EFA21A3DACC00094CBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				32D90F5521A3EFE700094CBA /* LoginManager.swift */,
+				32CCAE9A21ABAE5D0061A367 /* KeychainManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 				32D90F4A21A3E69800094CBA /* HomeMainController.swift in Sources */,
 				32D90F5021A3EC5700094CBA /* LoginController.swift in Sources */,
 				32D90F5221A3ED9D00094CBA /* LoginNavigationController.swift in Sources */,
+				32CCAE9B21ABAE5D0061A367 /* KeychainManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
