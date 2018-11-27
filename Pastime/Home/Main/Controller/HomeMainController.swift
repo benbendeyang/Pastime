@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class HomeMainController: BaseViewController {
 
@@ -18,19 +19,19 @@ class HomeMainController: BaseViewController {
     
     // MARK: - 操作
     @IBAction func test1(_ sender: Any) {
-        // 存储数据
-        let saveBool = KeychainManager.keyChainSaveData(data: "有只羊", with: "用户名")
-        if saveBool {
-            print("存储成功")
-        } else {
-            print("存储失败")
-        }
+        Alamofire.request("http://baidu.com/")
     }
     
     @IBAction func test2(_ sender: Any) {
-        // 获取数据
-        if let getString = KeychainManager.keyChainReadData(identifier: "用户名") as? String {
-            print(getString)
+        Alamofire.request("https://httpbin.org/get").responseJSON { response in
+            print("原始的URL请求:\(response.request)")  // 原始的URL请求
+            print("HTTP URL响应:\(response.response)") // HTTP URL响应
+            print("服务器返回的数据:\(response.data)")     // 服务器返回的数据
+            print("存储的是JSON数据:\(response.result)")   // 响应序列化结果，在这个闭包里，存储的是JSON数据
+            
+            if let JSON = response.result.value {
+                print("JSON: \(JSON)")
+            }
         }
     }
     

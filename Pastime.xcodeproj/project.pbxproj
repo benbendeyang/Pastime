@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1725596C7863AF470B19D3FC /* Pods_PastimeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3B6190349B548FC15A3BCF /* Pods_PastimeTests.framework */; };
+		3211116621AD70E5008F57B0 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3211116521AD70E5008F57B0 /* Service.swift */; };
+		3211116921AD738E008F57B0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3211116821AD738E008F57B0 /* String+Extension.swift */; };
 		32CCAE9B21ABAE5D0061A367 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CCAE9A21ABAE5D0061A367 /* KeychainManager.swift */; };
 		32D90EF421A3DACA00094CBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D90EF321A3DACA00094CBA /* AppDelegate.swift */; };
 		32D90EFB21A3DACC00094CBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D90EFA21A3DACC00094CBA /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		255ECDA25CD37AE2F8544111 /* Pods_Pastime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pastime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3211116521AD70E5008F57B0 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		3211116821AD738E008F57B0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		32CCAE9A21ABAE5D0061A367 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		32D90EF021A3DACA00094CBA /* Pastime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pastime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D90EF321A3DACA00094CBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +115,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3211116721AD732E008F57B0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3211116821AD738E008F57B0 /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		32D90EE721A3DACA00094CBA = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +148,7 @@
 		32D90EF221A3DACA00094CBA /* Pastime */ = {
 			isa = PBXGroup;
 			children = (
+				3211116721AD732E008F57B0 /* Extension */,
 				32D90F5321A3EE9200094CBA /* Common */,
 				32D90F4B21A3EBC400094CBA /* Login */,
 				32D90F4121A3E69800094CBA /* Home */,
@@ -267,6 +280,7 @@
 			children = (
 				32D90F5521A3EFE700094CBA /* LoginManager.swift */,
 				32CCAE9A21ABAE5D0061A367 /* KeychainManager.swift */,
+				3211116521AD70E5008F57B0 /* Service.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -504,12 +518,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pastime/Pods-Pastime-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -527,10 +547,12 @@
 				32D90F4821A3E69800094CBA /* UserMainController.swift in Sources */,
 				32D90F3621A3E68600094CBA /* BaseTabBarController.swift in Sources */,
 				32D90EF421A3DACA00094CBA /* AppDelegate.swift in Sources */,
+				3211116921AD738E008F57B0 /* String+Extension.swift in Sources */,
 				32D90F3721A3E68600094CBA /* BaseViewController.swift in Sources */,
 				32D90F5621A3EFE700094CBA /* LoginManager.swift in Sources */,
 				32D90F4A21A3E69800094CBA /* HomeMainController.swift in Sources */,
 				32D90F5021A3EC5700094CBA /* LoginController.swift in Sources */,
+				3211116621AD70E5008F57B0 /* Service.swift in Sources */,
 				32D90F5221A3ED9D00094CBA /* LoginNavigationController.swift in Sources */,
 				32CCAE9B21ABAE5D0061A367 /* KeychainManager.swift in Sources */,
 			);

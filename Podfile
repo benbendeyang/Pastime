@@ -6,7 +6,14 @@ target 'Pastime' do
   use_frameworks!
 
   # Pods for Pastime
+  
+  # 网络库
   pod 'Alamofire', '4.6.0'
+  # 网络抽象层
+  pod 'Moya', '12.0.1'
+  # 模型转换
+  pod 'ObjectMapper', '3.3'
+  
 
   target 'PastimeTests' do
     inherit! :search_paths
