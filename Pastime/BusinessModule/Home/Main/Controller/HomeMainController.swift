@@ -19,27 +19,32 @@ class HomeMainController: BaseViewController {
     
     // MARK: - 操作
     @IBAction func test1(_ sender: Any) {
-        Alamofire.request("http://baidu.com/")
+        Network.request(target: .demo1, success: { (result) in
+            Log(result)
+            guard let internet = Internet(JSON: (result as? [String : AnyObject] ?? [:])) else { return }
+            Log(internet.origin)
+            Log(internet.url)
+            Log(internet.Connection)
+            Log(internet.Host)
+            Log(internet.Agent)
+        }) { (error) in
+            Log(error.localizedDescription)
+        }
     }
     
     @IBAction func test2(_ sender: Any) {
-        Alamofire.request("https://httpbin.org/get").responseJSON { response in
-            print("原始的URL请求:\(response.request)")  // 原始的URL请求
-            print("HTTP URL响应:\(response.response)") // HTTP URL响应
-            print("服务器返回的数据:\(response.data)")     // 服务器返回的数据
-            print("存储的是JSON数据:\(response.result)")   // 响应序列化结果，在这个闭包里，存储的是JSON数据
-            
-            if let JSON = response.result.value {
-                print("JSON: \(JSON)")
-            }
+        Network.request(target: .demo2(name: "wuhao"), success: { (result) in
+            Log(result)
+        }) { (error) in
+            Log(error.localizedDescription)
         }
     }
     
     @IBAction func test3(_ sender: Any) {
-        if KeychainManager.keyChianDelete(identifier: "用户名") {
-            print("删除成功")
-        } else {
-            print("删除失败")
+        Network.request(target: .demo3(name: "wuhao", score: 100), success: { (result) in
+            Log(result)
+        }) { (error) in
+            Log(error.localizedDescription)
         }
     }
     
