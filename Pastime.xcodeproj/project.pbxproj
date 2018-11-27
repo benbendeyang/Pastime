@@ -123,6 +123,18 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		3211116A21AD749A008F57B0 /* BusinessModule */ = {
+			isa = PBXGroup;
+			children = (
+				32D90F3121A3E68600094CBA /* Base */,
+				32D90F3921A3E69700094CBA /* Root */,
+				32D90F4B21A3EBC400094CBA /* Login */,
+				32D90F4121A3E69800094CBA /* Home */,
+				32D90F3C21A3E69700094CBA /* User */,
+			);
+			path = BusinessModule;
+			sourceTree = "<group>";
+		};
 		32D90EE721A3DACA00094CBA = {
 			isa = PBXGroup;
 			children = (
@@ -148,13 +160,9 @@
 		32D90EF221A3DACA00094CBA /* Pastime */ = {
 			isa = PBXGroup;
 			children = (
+				3211116A21AD749A008F57B0 /* BusinessModule */,
 				3211116721AD732E008F57B0 /* Extension */,
-				32D90F5321A3EE9200094CBA /* Common */,
-				32D90F4B21A3EBC400094CBA /* Login */,
-				32D90F4121A3E69800094CBA /* Home */,
-				32D90F3921A3E69700094CBA /* Root */,
-				32D90F3C21A3E69700094CBA /* User */,
-				32D90F3121A3E68600094CBA /* Base */,
+				32D90F5321A3EE9200094CBA /* BaseModule */,
 				32D90EF321A3DACA00094CBA /* AppDelegate.swift */,
 				32D90EFA21A3DACC00094CBA /* Assets.xcassets */,
 				32D90EFC21A3DACC00094CBA /* LaunchScreen.storyboard */,
@@ -275,14 +283,14 @@
 			path = Contorller;
 			sourceTree = "<group>";
 		};
-		32D90F5321A3EE9200094CBA /* Common */ = {
+		32D90F5321A3EE9200094CBA /* BaseModule */ = {
 			isa = PBXGroup;
 			children = (
 				32D90F5521A3EFE700094CBA /* LoginManager.swift */,
 				32CCAE9A21ABAE5D0061A367 /* KeychainManager.swift */,
 				3211116521AD70E5008F57B0 /* Service.swift */,
 			);
-			path = Common;
+			path = BaseModule;
 			sourceTree = "<group>";
 		};
 		B019C6E595B864CE3E3E3FAE /* Frameworks */ = {
